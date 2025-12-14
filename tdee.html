@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TDEE Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="tdee.js"></script>
+</head>
+<body>
+  <header>
+    <label for="menu-checkbox" class="menu-toggle">☰ Menu</label>
+    <input type="checkbox" id="menu-checkbox">
+  <div class="banner-wrap">
+    <img src="veggies.jpg" alt="Mindful Nourish banner" class="banner">
+    <h1 class="banner-text">Mindful Nourish</h1>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="tdee.html">TDEE Calculator</a> |
+    <a href="swaps.html">Smart Swaps</a> |
+    <a href="protein.html">Protein & Supplements</a> |
+    <a href="workout.html">Workout Basics</a> |
+    <a href="track.html">Track & Stay Accountable</a> |
+    <a href="videos.html">Videos & Resources</a> |
+    <a href="about.html">About / Contact</a>
+  </nav>
+</header>
+
+
+  <main class="accountability-layout" id="tdee-section">
+    <h2 class="accountability-title">TDEE Calculator</h2>
+    <p>A TDEE calculator, or Total Daily Energy Expenditure calculator, is a tool used to estimate how many calories your body burns in a day. 
+      It factors in your Basal Metabolic Rate (BMR), which represents the calories your body uses at rest, along with the energy you expend through physical activity, exercise, 
+      and daily movement. People use a TDEE calculator to determine how many calories they should consume to maintain, lose, or gain weight. It also helps guide fitness planning and 
+      provides insight into how calorie intake compares to energy output, allowing for more informed decisions about diet and exercise to support specific health or fitness goals.
+    </p>
+
+    <div class="accountability-grid">
+      <div class="accountability-card">
+        <form id="tdee-form" class="mn-form">
+          <fieldset class="mn-fieldset">
+            <legend>Sex</legend>
+            <label class="mn-radio"><input type="radio" name="sex" value="male" checked> Male</label>
+            <label class="mn-radio"><input type="radio" name="sex" value="female"> Female</label>
+          </fieldset>
+
+          <label class="mn-label">Age (years)
+            <input class="mn-input" type="number" id="age" min="13" max="120" required>
+          </label>
+
+          <label class="mn-label">Units
+            <select class="mn-select" id="units">
+              <option value="metric" selected>Metric (kg, cm)</option>
+              <option value="us">US (lb, in)</option>
+            </select>
+          </label>
+
+          <div id="metric-fields" class="mn-row">
+            <label class="mn-label">Weight (kg)
+              <input class="mn-input" type="number" id="weight-kg" step="0.1" min="25" max="400">
+            </label>
+            <label class="mn-label">Height (cm)
+              <input class="mn-input" type="number" id="height-cm" step="0.1" min="120" max="250">
+            </label>
+          </div>
+
+          <div id="us-fields" class="mn-row" style="display:none;">
+            <label class="mn-label">Weight (lb)
+              <input class="mn-input" type="number" id="weight-lb" step="0.1" min="55" max="880">
+            </label>
+            <label class="mn-label">Height
+              <select class="mn-select" id="height-select">
+                <option value="">Select height</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="mn-label">Activity level
+            <select class="mn-select" id="activity">
+              <option value="1.2">Sedentary (little or no exercise)</option>
+              <option value="1.375">Light (1–3 days/week)</option>
+              <option value="1.55" selected>Moderate (3–5 days/week)</option>
+              <option value="1.725">Very active (6–7 days/week)</option>
+              <option value="1.9">Extra active (physical job + training)</option>
+            </select>
+          </label>
+
+          <button class="mn-btn" type="submit">Calculate TDEE</button>
+        </form>
+      </div>
+
+      <!-- Results card -->
+      <div class="accountability-card" id="tdee-output"></div>
+        <div class="accountability-card" id="tdee-tips">
+          <h3 class="mn-tips-title">Tips for Using Your TDEE</h3>
+          <ul class="mn-tips-list">
+            <li>Use your TDEE as a baseline. It’s an <strong>estimate</strong>, not a rule. Adjust based on results every few weeks.</li>
+            <li>If you are just starting out, I recommend setting your activity level to sedentary to accurately calculate your BMR.</li>
+            <li>If your goal is <strong>weight loss</strong>, aim for a 250–500 kcal deficit daily for steady, sustainable change. If you need to be more aggressive, try a 750 kcal deficit, though this is not recommended for beginners.</li>
+            <li>If you want to <strong>build muscle</strong>, try a 200–400 kcal surplus to promote lean growth, but only if you have reached your goal weight for fat loss.</li>
+            <li>Recalculate your TDEE when your weight, activity, or goals change significantly.</li>
+            <li>Focus on <strong>macronutrient balance</strong>. Protein supports recovery and muscle growth, carbs and fats fuel performance.</li>
+            <li>Pair your TDEE plan with movement and mindful eating for long-term results.</li>
+          </ul>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mindful Nourish</p>
+  </footer>
+</body>
+</html>
