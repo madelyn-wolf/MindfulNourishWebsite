@@ -57,17 +57,17 @@ The project emphasizes usability, accessibility, and a polished user experience.
 
 The TDEE (Total Daily Energy Expenditure) calculator allows users to estimate daily caloric needs based on:
 
-- age
+- Age
 
-- gender
+- Gender
 
-- height
+- Height
 
-- weight
+- Weight
 
-- activity level
+- Activity level
 
-The logic is implemented in tdee.js using JavaScript and dynamically updates results on the page without requiring a refresh.
+The logic is implemented in tdee.js using JavaScript and dynamically updates results on the page without requiring a refresh. Includes options for Metric and Imperial.
 
 ---
 
