@@ -91,5 +91,6 @@ Please do not copy or redistribute this project as your own work.
 
 Madelyn Wolf
 - Bachelor’s in Information Technology, Focus Area: Security
+- Arizona State University
 - Expected Graduation: May 2026, Summa Cum Laude
-- Front-End Web Design & Security-Focused Development
+
