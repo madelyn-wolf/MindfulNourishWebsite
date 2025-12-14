@@ -53,6 +53,24 @@ The project emphasizes usability, accessibility, and a polished user experience.
 
 ---
 
+## 🧮 TDEE Calculator
+
+The TDEE (Total Daily Energy Expenditure) calculator allows users to estimate daily caloric needs based on:
+
+- age
+
+- gender
+
+- height
+
+- weight
+
+- activity level
+
+The logic is implemented in tdee.js using JavaScript and dynamically updates results on the page without requiring a refresh.
+
+---
+
 ## 🚀 How to View the Project
 
 1. Clone the repository:
@@ -62,4 +80,16 @@ The project emphasizes usability, accessibility, and a polished user experience.
 ---
 
 ## 📄 License
-This project is licensed under the MIT License 
+This project is shared for portfolio and demonstration purposes.
+
+You are welcome to view, explore, and reference the code.
+Please do not copy or redistribute this project as your own work.
+
+---
+
+## 👩‍💻 Author
+
+Madelyn Wolf
+- Bachelor’s in Information Technology, Focus Area: Security
+- Expected Graduation: May 2026, Summa Cum Laude
+- Front-End Web Design & Security-Focused Development
